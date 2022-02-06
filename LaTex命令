@@ -1,0 +1,55 @@
+\par  生成新段落
+\usepackage  导入宏包
+\underline  下划线
+\emph  斜体强调
+\\或\newline  换行
+\newpage  分页
+\chapter  \section  \paragraph
+\tableofcontents  目录
+\enumerate  有序列表
+\itemize  无序列表
+\item  列表项
+\begin{verbatim}  代码区
+
+使用graphicx宏包引入插图
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm,height=8cm]{central}
+    \caption{这是一张图片}
+\end{figure}
+[h]指的是当前位置，\centering让图片居中，\includegraphics[参数可以设置图片格式]
+
+两图并排
+\begin{figure}[h]
+    \begin{minipage}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width=5.5cm,height=4cm]{central}
+        \caption{第一张图片}
+    \end{minipage}
+    \begin{minipage}[t]{0.5\linewidth}
+        \hspace{2mm}
+        \includegraphics[width=5.5cm,height=4cm]{Kennedy Town}
+        \caption{第二张图片}
+    \end{minipage}
+\end{figure}
+
+四张子图
+\begin{figure}[htbp]
+    \centering
+    \subfigure[Kennedy Town]{
+        \includegraphics[scale=0.03]{pic/Kennedy Town}\label{1}
+    }
+    \quad%空格
+    \subfigure[Fig2]{
+        \includegraphics[scale=0.03]{pic/Kennedy Town}\label{2}
+    }
+    \quad
+    \subfigure[Fig3]{
+        \includegraphics[scale=0.03]{pic/Kennedy Town}\label{3}
+    }
+    \quad
+    \subfigure[Fig4]{
+        \includegraphics[scale=0.03]{pic/Kennedy Town}\label{4}
+    }
+    \caption{Experimental results of the authors}
+\end{figure}
