@@ -1,0 +1,105 @@
+\documentclass{mcmthesis}
+\usepackage{newtxtext}
+\usepackage{palatino}
+\usepackage{lipsum}
+\begin{document}
+\mcmsetup{CTeX = false,   % 使用 CTeX 套装时，设置为 true
+        tcn = 0000, problem = A,
+        sheet = true, titleinsheet = true, keywordsinsheet = true,
+        titlepage = false, abstract = false}
+\title{This is title}
+\begin{abstract}
+\qquad This is \textbf{abstract}
+\begin{keywords}
+keyword1; keyword2
+\end{keywords}
+\end{abstract}
+\maketitle
+\tableofcontents
+\newpage
+\section{Introduction}
+\subsection{Background}
+
+\subsection{Restatement of the Problem}
+
+\subsection{Our Work}
+
+\section{Assumptions and Explanations}
+
+\section{Notations}
+\begin{center}
+\begin{tabular}{ccc}
+	\toprule[2pt] Symbol & Description & Unit \\
+	\midrule[1pt]
+	$D$ & Decomposition rate & $\%$ mass loss over 122 days \\
+	$H$ & Hyphal extension rate & $\mathrm{mm} /$ day \\
+	$m$ & Moisture tolerance & $-$ \\
+	$G$ & Growth rate & $\mathrm{mm} / \mathrm{day}$ \\
+	$\tau$ & Time & day \\
+	$n$ & Fungi population size & Strain/ $m^{2}$ \\
+	$\omega$ & Moisture niche width & $\mathrm{MPa}$ \\
+	$v$ & Temperature niche width & ${ }^{\circ} \mathrm{C}$ \\
+	$x$ & Environmental moisture & $\mathrm{MPa}$ \\
+	$y$ & Environmental temperature & ${ }^{\circ} \mathrm{C}$ \\
+	\bottomrule[2pt]
+\end{tabular}
+\end{center}
+
+\section{Model}
+
+\section{Sensitivity Analysis}
+
+\section{Evaluation of Strengths and Weaknesses}
+
+\subsection{Strengths}
+
+\subsection{Weaknesses}
+
+\begin{thebibliography}{99}
+\bibitem{1} D.~E. KNUTH   The \TeX{}book  the American
+Mathematical Society and Addison-Wesley
+Publishing Company , 1984-1986.
+\bibitem{2}Lamport, Leslie,  \LaTeX{}: `` A Document Preparation System '',
+Addison-Wesley Publishing Company, 1986.
+\bibitem{3}\url{http://www.latexstudio.net/}
+\bibitem{4}\url{http://www.chinatex.org/}
+\end{thebibliography}
+
+\begin{appendices}
+
+\section{First appendix}
+
+In addition, your report must include a letter to the Chief Financial Officer (CFO) of the Goodgrant Foundation, Mr. Alpha Chiang, that describes the optimal investment strategy, your modeling approach and major results, and a brief discussion of your proposed concept of a return-on-investment (ROI). This letter should be no more than two pages in length.
+
+\begin{letter}{Dear, Mr. Alpha Chiang}
+
+\lipsum[1-2]
+
+\vspace{\parskip}
+
+Sincerely yours,
+
+Your friends
+
+\end{letter}
+Here are simulation programmes we used in our model as follow.\\
+
+\textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input matlab source:}}
+
+
+\section{Second appendix}
+
+some more text \textcolor[rgb]{0.98,0.00,0.00}{\textbf{Input C++ source:}}
+
+\end{appendices}
+
+\newpage
+\begin{center}
+\section*{Letter}
+\end{center}
+\qquad This is letter\\
+
+\addcontentsline{toc}{section}{Letter}
+
+\end{document}
+
